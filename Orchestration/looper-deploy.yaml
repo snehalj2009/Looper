@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: looper-deployment
+  labels:
+    app: looper
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: looper
+  template:
+    metadata:
+      labels:
+        app: looper
+    spec:
+      containers:
+      - name: looper
+        image: docker.io/snehalj/looper:v1

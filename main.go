@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"os"
+)
 
 func main() {
 	fmt.Println("Starting Looper")
@@ -10,4 +13,7 @@ func main() {
 		}
 
 	}
+
+	fmt.Println("GoVersion:", os.Getenv("GOVERSION"))
+
 }

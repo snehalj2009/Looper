@@ -16,4 +16,7 @@ spec:
     spec:
       containers:
       - name: looper
-        image: docker.io/snehalj/looper:v1
+        image: docker.io/snehalj/looper:v3
+        env:
+        - name: GOVERSION
+          value: "1.13"

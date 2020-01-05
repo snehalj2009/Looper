@@ -15,5 +15,6 @@ func main() {
 	}
 
 	fmt.Println("GoVersion:", os.Getenv("GOVERSION"))
-
+	fmt.Println("Special-Config:", os.Getenv("GOVERSION"))
+	
 }

@@ -16,5 +16,6 @@ func main() {
 
 	fmt.Println("GoVersion:", os.Getenv("GOVERSION"))
 	fmt.Println("Special-Config:", os.Getenv("MYNAME"))
+	fmt.Println("Secret:", os.Getenv("SECRET"))
 
 }
